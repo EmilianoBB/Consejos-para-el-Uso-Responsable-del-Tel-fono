@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensión del Uso Excesivo del Teléfono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            font-size: 24px;
+        }
+        .titulo-izquierda {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .datos-superior {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            padding: 20px;
+        }
+        .contenido {
+            flex: 2;
+            padding-right: 20px;
+            border-right: 3px solid black;
+        }
+        .datos {
+            flex: 1;
+            padding-left: 20px;
+        }
+        article, aside {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="titulo-izquierda">
+            COLEGIO DE BACHILLERES DEL ESTADO DE MORELOS PLANTEL 10 SANTA ROSA 30
+        </div>
+        <h1>Dimensión del Uso Excesivo del Teléfono</h1>
+        <div class="datos-superior">
+            Emiliano Bermúdez Bobadilla, Ángel Ceballos Barroso | Grupo 611 | <span id="fecha"></span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="Efectos negativos.html">Efectos negativos</a>
+        <a href="Prevención.html">Prevención</a>
+        <a href="Consejos de uso responsable.html">Consejos de uso responsable</a>
+        <a href="Dimensión de uso excesivo.html">Dimensión de uso excesivo</a>
+    </nav>
+
+    <section>
+        <div class="contenido">
+            <article>
+                <h2>Dimensión Física</h2>
+                <p>El uso excesivo del móvil puede provocar problemas físicos como fatiga visual, dolor cervical y alteraciones en el sueño debido a la exposición prolongada a pantallas.</p>
+                <img src="imagen18.jpg">
+            </article>
+
+            <article>
+                <h2>Dimensión Psicológica</h2>
+                <p>El abuso del móvil puede generar ansiedad, dependencia digital y dificultades para concentrarse en tareas importantes. También se ha relacionado con problemas de autoestima y depresión.</p>
+                <img src="imagen19.jpg">
+            </article>
+
+            <article>
+                <h2>Dimensión Social</h2>
+                <p>El uso excesivo del teléfono puede afectar las relaciones interpersonales, reduciendo la interacción cara a cara y generando una desconexión con el entorno social.</p>
+                <img src="imagen20.jpg">
+            </article>
+
+            <article>
+                <h2>Dimensión Académica y Laboral</h2>
+                <p>El tiempo excesivo en el móvil puede reducir la productividad, causar distracción en el estudio o trabajo y afectar la capacidad de retener información importante.</p>
+                <img src="imagen21.jpg">
+            </article>
+
+            <article>
+                <h2>Dimensión Conductual</h2>
+                <p>El abuso del móvil puede llevar a una actitud más irritable y menos paciente, afectando la comunicación y el bienestar emocional.</p>
+                <img src="imagen22.jpg">
+            </article>
+        </div>
+
+        <div class="datos">
+            <aside>
+                <h3>¿Sabías que?</h3>
+                <p>El uso prolongado de dispositivos móviles afecta la producción de melatonina, alterando los ciclos de sueño.</p>
+            </aside>
+<div class="gif-container">
+    <img src="a.gif" width="300" height="200" alt="Animación de efectos negativos">
+</div>
+
+            <aside>
+                <h3>Dato Curioso</h3>
+                <p>Los estudios revelan que muchas personas revisan su teléfono hasta 150 veces al día, causando interrupciones constantes en sus actividades.</p>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>Emiliano Bermúdez Bobadilla, Ángel Ceballos Barroso | Morelos | Grupo 611 | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        const fechaActual = new Date();
+        const opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+        document.querySelectorAll("#fecha").forEach(span => span.textContent = fechaFormateada);
+    </script>
+</body>
+</html>
